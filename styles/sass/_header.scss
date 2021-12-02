@@ -1,0 +1,210 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: $font-size-15px;
+}
+
+body{
+  position: relative;
+}
+
+ul{
+  list-style: none
+}
+
+a{
+  text-decoration: none
+}
+
+
+
+// HEADER
+.header{
+  position: relative;
+  background: linear-gradient(to right, rgba(0,0,0,.4),rgba(0,0,0,.1)),
+  url(../../images/mobile/image-hero.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 2.5rem 0rem;
+
+  @include breakpoint(md){
+    background: linear-gradient(to right, rgba(0,0,0,.4),rgba(0,0,0,.1)),
+    url(../../images/desktop/image-hero.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .container{
+    .nav{
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+    
+        .logo{
+          z-index: 1002;
+          height: 100%;
+          img{
+            width: 150px;
+            height:100%;
+          }
+        }
+    
+        .toggle{
+          z-index: 1001;
+          cursor: pointer;
+          height: 100%;
+          width: 30px;
+                
+          .icon1{
+            background: url(../../images/icon-hamburger.svg) no-repeat;
+            background-position: center;
+            background-size: 100%;
+            height: 100%;
+            transition: .3s ease-in-out;
+          }
+          .icon2{
+            background: url(../../images/icon-close.svg) no-repeat;
+            background-position: center;
+            background-size: 100%;
+            height: 100%;
+            transition: .3s ease-in-out;
+          }
+
+          @include breakpoint(md){
+            display: none;
+          }
+    
+        }
+    
+        .nav-menu{
+          position: fixed;
+          background-color: #000;
+          height: 100%;
+          top: -100rem;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          transition: .3s ease;
+          z-index: 1000;
+          display: flex;
+          align-items: center;
+
+          @include breakpoint(md){
+            position: relative;
+            background-color: transparent;
+            top: inherit;
+            display: flex;
+            align-items: center;
+          }
+          
+          &__ul{
+            width: 100%;
+
+            @include breakpoint(md){
+              display: flex;
+              align-items: center;
+              top: 0rem;
+              margin: 0;
+            }
+
+            .item{
+              margin: .8rem 0rem;
+
+              @include breakpoint(md){
+                margin: 0rem;
+              }
+              
+            
+              &__link{
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: $font-Josefin;
+                color: $very-dark-gray;
+                font-size: 1.5rem;
+                font-weight: 600;
+      
+                &:hover,
+                &:active{
+                  color: $white;
+
+                  &::after{
+                    content: "";
+                    position: absolute;
+                    background-color: $white;
+                    width: 40px;
+                    height: 2px;
+                    bottom: -.4rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                  }
+                }
+
+                @include breakpoint(md){
+                  text-transform: capitalize;
+                  font-size: 1rem;
+                  color: $white;
+                }
+              }
+            }
+          }
+        } 
+        // JAVASCRIPT ADDINGS
+        .show{
+          top: 0;
+        }
+        .overflow-hidden{
+          overflow: hidden;
+        }
+        // JAVASCRIPT ADDINGS 
+      } // NAVIGATION ENDs
+  }
+
+
+  // HEADER CONTENT
+  .hero-content{
+    // position: relative;
+    border: 1px solid $white;
+    padding: 1.5rem;
+    margin: 9rem 0rem;
+    width: 100%;
+
+    @include breakpoint(md){
+    margin: 5rem 0rem;
+    padding: 3rem;
+    width: 60%;
+    }
+
+    @include breakpoint(lg){
+      padding: 2rem 4rem;
+      width: 50%;
+      margin: 8rem 0rem 6rem;
+    }
+
+
+      &__title{
+        color: $white;
+        font-family: $font-Josefin;
+        font-size: 3rem;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: .9;
+
+         @include breakpoint(lg){
+          font-size: 4.5rem;
+        }
+      }
+  }
+  // HEADER CONTENT END
+
+}
+
+// HEADER ENDs
+

@@ -1,0 +1,111 @@
+.footer{ 
+  background-color: $black;
+  .container{
+    padding: 3rem 0rem 5rem;
+    text-align: center;
+
+    @include breakpoint(md){
+    padding: 3rem 0rem;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas: 
+      "logo social"
+      "menulink copyright";
+    }
+
+    .logo{
+      margin-bottom: 1.5rem;
+      
+      @include breakpoint(md){
+        grid-area: logo;
+        text-align: left;
+        padding-bottom: 0;
+      }
+    }
+
+    .nav-menu,
+    .social-media{
+      padding: 0;
+      li{
+        a{
+          color: $white;
+        }
+      }
+    }
+
+    .nav-menu{
+      margin-bottom: 2rem;
+      @include breakpoint(md){
+      margin-bottom: 0rem;
+      grid-area: menulink;
+        display: flex;
+      }
+      li{
+        padding-bottom: 1rem;
+        font-family: $font-Josefin;
+        font-weight: 600;
+        font-size: 1.1rem;
+
+        @include breakpoint(md){
+          padding-bottom: 0rem;
+          padding-right: 1rem;
+        }
+
+        a{
+          position: relative;
+
+          &:hover{
+            &::before{
+              content: "";
+              position: absolute;
+              background-color: $white;
+              width: 2em;
+              height: 1px;
+              bottom: -.3rem;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+      
+        }
+      }
+    }
+
+    .social-media{
+      display: flex;
+      justify-content: center;
+      font-size: 1.5rem;
+      @include breakpoint(md){
+        grid-area: social;
+      justify-content: end;
+    }
+      li{
+        padding: 0rem .7rem;
+
+        a{
+          position: relative;
+          &:hover{
+            &::before{
+              content: "";
+              position: absolute;
+              background-color: $white;
+              width: .8em;
+              height: 1px;
+              bottom: -.3rem;
+            }
+          }
+        }
+      }
+    }
+
+    .copyright{
+      color: $dark-gray;
+      @include breakpoint(md){
+        grid-area: copyright;
+        margin: 0;
+        text-align: right;
+      }
+    }
+
+  }
+}
