@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://your-solution-url.com)
-- Live Site URL: [Click here](https://your-live-site-url.com)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/mobile-first-html-sass-js-1FX-pSIi5)
+- Live Site URL: [Click here](https://hatwell-jonel.github.io/frontendmentor-loopstudio/)
 
 ### Built with
 
@@ -50,8 +50,8 @@ Users should be able to:
 
 ## Author
 
-- Linkedin - [Jonel Hatwell](https://www.your-site.com)
-- Frontend Mentor - [@hatwell](https://www.frontendmentor.io/profile/yourusername)
+- Linkedin - [Jonel Hatwell](https://www.linkedin.com/in/jonel-hatwell/)
+- Frontend Mentor - [@hatwell-jonel](https://www.frontendmentor.io/profile/hatwell-jonel)
 
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
