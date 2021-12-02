@@ -12,8 +12,6 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
   - [Author](#author)
 
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -45,8 +43,6 @@ Users should be able to:
 - Javascript
 
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 
 ## Author
 
@@ -54,4 +50,3 @@ Users should be able to:
 - Frontend Mentor - [@hatwell-jonel](https://www.frontendmentor.io/profile/hatwell-jonel)
 
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
